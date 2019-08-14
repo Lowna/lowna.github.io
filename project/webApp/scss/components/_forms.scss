@@ -1,0 +1,38 @@
+//form////////////////////////////////////////////////////////////////////////////////
+fieldset {
+	border: none;
+}
+.form-container {
+	@include form;
+}
+#messageSubmit, #user, textarea {
+	cursor: pointer;
+}
+#autoComplete ol {
+	list-style: none;
+}
+#inputRequired,
+#textfieldRequired {
+	display: none;
+	padding: 1em;
+	text-align: right;
+	color: $alert;
+	font-size: 12px;
+	font-weight: 900;
+}
+//form////////////////////////////////////////////////////////////////////////////////
+
+//settings////////////////////////////////////////////////////////////////////////////
+
+.settings-container {
+	display: flex;
+	flex-direction: column;
+}
+#timezone-offset {
+	border: 1px solid $inputBorder;
+	background: $inputBackground;
+	color: $timezoneTxtColor;
+	border-radius: 5px;
+	padding: 1em;
+	margin: 0.5em;
+}

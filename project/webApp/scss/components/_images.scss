@@ -1,0 +1,64 @@
+//bell notification/////////////////////////////////////////////////////////////////////////////////
+.bell {
+	width: 30px;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+#shakeBell:hover {
+	animation: shakeBell 1s ease-in;  
+}
+@keyframes shakeBell {
+	  0% { transform: rotate(0); }
+	  15% { transform: rotate(5deg); }
+	  30% { transform: rotate(-5deg); }
+	  45% { transform: rotate(4deg); }
+	  60% { transform: rotate(-4deg); }
+	  75% { transform: rotate(2deg); }
+	  85% { transform: rotate(-2deg); }
+	  92% { transform: rotate(1deg); }
+	  100% { transform: rotate(0); }
+}
+#circleSvg {
+	margin-bottom: 40px;
+	padding-right: 15px;
+}
+.circle {
+	height: 20px;
+	width: 20px;
+}
+//bell notification/////////////////////////////////////////////////////////////////////////////
+
+//images///////////////////////////////////////////////////////////////////////////////////////
+#avatar {
+	@include image-avatar;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.member-img {
+	@include image-avatar;
+	margin-top: 20px;
+}
+.img-container {
+	padding-right: 15px;
+}
+
+.post-img {
+	margin-top: 15px;
+}
+
+//images///////////////////////////////////////////////////////////////////////////////////////
+
+//social media/////////////////////////////////////////////////////////////////////////////////
+.social-icons {
+	@include social-icons;
+}
+.social-icons svg {
+	height: 50px;
+	margin-top: 15%;
+	margin-left: 8px;
+}
+//social media/////////////////////////////////////////////////////////////////////////////////
+.fa-chevron-right {
+	margin: 30px 0 0 60px;
+	color: $toggleChev;
+}

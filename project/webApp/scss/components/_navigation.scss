@@ -1,0 +1,62 @@
+//site navigation/////////////////////////////////////////////////////////////////////////////////////////
+#main-nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-basis: 90%;
+	padding: 0 4em 0 4em;
+}
+.nav-bar {
+	list-style: none;
+}
+.nav-bar li {
+	margin-top: 5px;
+}
+.icon-nav {
+	width: 40px;
+	padding: 1em;
+}
+#main-nav li a .icon-nav img:active {
+	color: #fff;
+}
+#main-nav li a .icon-nav:hover {
+	color: $white;
+	border-bottom: 3px solid $navBrdr;
+	border-radius: 3px;
+	transition: 300ms ease-out;
+}
+@media (min-width: 768px) {
+	#main-nav li a .icon-nav:hover {
+		color: $white;
+		border-bottom: none;
+		border-left: 3px solid $navBrdr;
+		border-right: 0;
+		border-radius: 3px;
+		transition: 300ms ease-out;
+	}
+}
+//Chart navigation/////////////////////////////////////////////////////////////////////////////////////////
+#chartNav ul {
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	
+}
+#chartNav ul li {
+	color: $chart-nav;
+	padding: 0.5em;
+	margin: 1em;
+	border-radius: 25px;
+	cursor: pointer;
+	
+}
+#chartNav ul li:hover {
+	background: $chart-nav-hover;
+	color: $white;
+	transition: 500ms ease-in;
+}
+@media (min-width: 768px) {
+	#chartNav ul {
+		justify-content: flex-end;
+	}
+}

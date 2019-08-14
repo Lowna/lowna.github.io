@@ -1,0 +1,118 @@
+@mixin image-avatar { 
+		border-radius: 50%;
+		width: 50px;
+	}
+@mixin social-icons {
+	width: 70px;
+	height: 70px;
+	background: $socialIconBackground;
+	overflow: visible;
+	border-radius: 50%;
+	margin: auto 0;
+}
+@mixin form {
+	display: flex;
+	flex-direction: column;
+	padding: 1em;
+	input {
+		border: 1px solid $inputBorder;
+		background: $inputBackground;
+		border-radius: 5px;
+		padding: 1em;
+		margin-bottom: 10px;
+	}
+	textarea {
+		border: 1px solid $inputBorder;
+		background: $inputBackground;
+		border-radius: 5px;
+		padding: 2em;
+		margin-bottom: 10px;
+	}
+	button {
+		background: $sendSaveAlert;
+		color: $white;
+		border: none;
+		border-radius: 5px;
+		padding: 1em;
+		text-transform: uppercase;
+	}
+	button:hover {
+		background: $btn-hover;
+		transition: 0.5s ease-in; 
+	}
+}
+@mixin save-cancel-btn {
+	flex-basis: 50%;
+	color: $white;
+	border: none;
+	border-radius: 5px;
+	padding: 1em;
+	margin: 0.5em;
+	text-transform: uppercase;
+}
+@mixin search-bar {
+	border: 1px solid $search;
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	margin: 15px;
+	input {
+		flex-grow: 1;
+		padding: 10px;
+		border: none;
+		background: $white;
+		color: $search;
+	}
+	button {
+		border: none;
+		background: $white;
+	}
+	button i {
+		border: none;
+		background: $white;
+		color: $searchIcn;
+	}
+	}
+	@mixin toggle-switch {
+		.on-off-choice {
+		margin-left: 10px
+		}
+		.on-off-switch {
+			display: flex;
+			justify-content: space-between;
+		}
+		.toggle-btn {
+			width: 80px;
+			height: 25px;
+			margin-top: 10px;
+			margin-right: 25px;
+			background-color: $toggleChev;
+			border: 2px solid #dcdbd7;
+			border-radius: 30px;
+			padding: 5px;
+			transition: 300ms ease-in-out;
+			cursor: pointer;
+		}
+		.toggle-btn .on {
+			position: relative;
+			bottom: 42px;
+			left: 3px;
+			text-transform: uppercase;
+			color: $white;
+		}
+		.toggle-btn .inner-circle {
+			width: 23px;
+			height: 23px;
+			background-color: $white;
+			border: 2px solid #dcdbd7;
+			border-radius: 50%;
+			margin-left: 3px;
+			transition: 300ms ease-in-out;
+		}
+		.toggle-btn.active {
+			background: tomato;
+		}
+		.toggle-btn.active > .inner-circle {
+			margin-left: 50px;
+		}
+	}

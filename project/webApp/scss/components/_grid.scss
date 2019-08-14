@@ -1,0 +1,212 @@
+//header///////////////////////////////////////////////////////////////////////////////////////
+header {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.header-container {
+	background-color: $socialIconBackground;
+	color: $white;
+	padding: 10px;
+	.app-name em {
+		font-weight: 300;
+	}
+}
+.app-name {
+	flex-grow: 5;
+}
+//search bar////////////////////////////////////////////////////////////////////////////////////
+#searchBar {
+	@include search-bar;
+}
+//search bar////////////////////////////////////////////////////////////////////////////////////
+#top {
+	flex-grow: 1;
+	padding-left: 5px;
+}
+.side-nav-container {
+	background-color: $sideNav;
+	color: $white;
+	padding: 10px;
+}
+#notification {
+	border-right: 3px solid $headerIcnBrdr;
+}
+#alertNote {
+	background: $sendSaveAlert;
+	color: $white;
+	padding: 1em;
+	display: flex;
+	justify-content: center;
+	margin: 2em;
+	border-radius: 10px;
+}
+#alertMessage {
+	flex-grow: 1;
+	font-size: 1em;
+}
+#alertClose {
+	margin-left: 20px;
+}
+//header///////////////////////////////////////////////////////////////////////////////////////////////
+
+//base sections///////////////////////////////////////////////////////////////////////////////////////
+.base-section {
+	border: 1px solid $base-brdr-color;
+	padding: 1em;
+}
+//notification dropdown/////////////////////////////////////////////////////////////////////////////////
+#dropdown {
+	background: $sendSaveAlert;
+	color: $white;
+	
+	padding: 1.5em;
+	border: 1px solid $white;
+	display: none;
+	position: absolute;
+	ol {
+		padding-right: 2em;
+		margin: auto;
+		li {
+			list-style: none;
+			padding: 1em;
+			border-bottom: 2px solid $white;
+		}
+	li:hover {
+			background: $btn-hover;
+			transition: 0.5s ease-in;
+			cursor: pointer;
+	}
+	}
+}
+@media (min-width: 768px) {
+	#dropdown {
+		width: 20%;
+	}
+}
+//notification dropdown/////////////////////////////////////////////////////////////////////////////////
+
+.social-widget {
+	background: $inputBackground;
+	border: 1px solid $inputBorder;
+	display: flex;
+	flex-direction: row;
+	padding: 1em;
+	margin: 1em;
+
+}
+//chart js /////////////////////////////////////////////////////////////////////////////////////////////
+.web-chart-container {
+	max-height: 28em;
+	height: 25em;
+	padding: 2em;
+}
+.square-chart-container {
+	height: 40vh;
+	padding: 2em;
+}
+
+//members area//////////////////////////////////////////////////////////////////////////////////////////
+.member-container {
+	display: flex;
+	border-bottom: 1px solid $memberContainer;
+}
+.date-joined {
+	margin-top: 30px;
+}
+.member-posts {
+	width: 300px;
+}
+//members area//////////////////////////////////////////////////////////////////////////////////////////
+
+@media (min-width: 768px) {
+//grid/////////////////////////////////////////////////////////////////////////////////////////////////
+	.container {
+		display: grid; 
+		height: 100vh;
+		grid-template-columns: 125px auto auto;
+		grid-template-rows: auto;
+		grid-template-areas: 
+		'header header header'
+		'nav banner banner'
+		'nav main main'
+		;
+	}
+	.header-container {
+		grid-area: header;
+		.app-name em {
+			font-weight: 300;
+		}
+	}
+	.side-nav-container {
+		grid-area: nav;
+		padding: 0;
+	}
+	.side-nav-container #main-nav { 
+		flex-direction: column;
+		text-align: center;
+		padding: 0;
+	 }
+	 .side-nav-container #main-nav li {
+	 	padding: 1.5em;
+	 }
+	#banner {
+		grid-area: banner;
+	}
+	.section-container {
+		grid-area: main;
+		display: grid;
+		grid-template-columns: repeat(3 1fr);
+		grid-template-rows: auto;
+		grid-template-areas:
+		'daily mobile'
+		'social social'
+		'new recent'
+		'message settings' 
+		;
+	}
+	#social {
+		grid-area: social;
+		display: flex;
+		flex-direction: row;
+	}
+	#daily-traffic {
+		grid-area: daily;
+	}
+	#mobile-traffic {
+		grid-area: mobile;
+	}
+	#new-member {
+		grid-area: new;
+	}
+	#recent-activity {
+		grid-area: recent;
+	}
+	#message-user {
+		grid-area: message;
+	}
+	#settings {
+		grid-area: settings;
+	}
+//grid/////////////////////////////////////////////////////////////////////////////////////////////////
+#searchContainer {
+	display: flex;
+	h2 {
+		padding-right: 1em;
+		padding-left: 1em;
+	}
+	#searchWrap {
+	flex-grow: 1;
+	background: $inputBackground;
+	border: 1px solid #d8d8d8;
+	}
+	#searchBar {
+		float: right;
+		width: 30%;
+	}
+}
+.social-widget {
+	flex-grow: 1;
+}
+}

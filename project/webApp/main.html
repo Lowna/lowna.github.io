@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+  	<meta name="description" content="WebApp Dashboard">
+  	<meta name="author" content="Lowry Nakamura">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>WebApp Dashboard</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container">
+		<!--header section 1---------->
+		<header class="header-container">
+			<h1 class="app-name">Your<em>App</em>&#8482;</h1>
+			<div id="notification">
+				<span><img class="bell" id="shakeBell" src="icons/icon-bell.svg"></span>
+					<svg id="circleSvg" height="14" width="14">
+	  				<circle id="circle" cx="10" cy="10" r="4" fill="#F31431" />
+					</svg>
+			</div>
+			<img src="images/member-1.jpg" id="avatar"> 
+			<p id="top">John/Jane Doe</p>
+		</header>
+		<!--header section 1---------->
+		<!--nav section 2---------->
+		<aside class="side-nav-container">
+			<nav id="main-nav" class="nav-bar">
+				<li><a><img class="icon-nav" src="icons/icon-dashboard.svg" alt=""></a></li>
+				<li><a><img class="icon-nav" src="icons/icon-members.svg" alt=""></a></li>
+				<li><a><img class="icon-nav" src="icons/icon-visits.svg" alt=""></a></li>
+				<li><a><img class="icon-nav" src="icons/icon-settings.svg" alt=""></a></li>
+			</nav>
+		</aside>
+		<!--nav section 2---------->
+		<!--section container section 3---------->
+		<!--dropdown notification menu -->
+		<div id="dropdown">
+			<ol>
+				<li>New</li>
+				<li>Older</li>
+				<li>Archive</li>
+			</ol>
+		</div>
+		<!--end dropdown menu-->
+		<section id="banner">
+			<div id="searchContainer">
+				<h2>Dashboard</h2>
+				<div id="searchWrap">
+					<div id="searchBar">
+						<input type="text" placeholder="Search..">
+						<button type="button"><i class="fas fa-search fa-sm"></i></button>
+					</div>
+				</div>
+			</div>
+			<div id="alertNote">
+				<p id="alertMessage"><strong>Alert</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+				<p id="alertClose"><i class="fas fa-times"></i></p>
+			</div>
+			<h3 class="section-title">Traffic</h3>
+			<nav id="chartNav">
+				<ul>
+					<li class="time-control" id="hourly">Hourly</li>
+					<li class="time-control" id="daily">Daily</li>
+					<li class="time-control" id="weekly">Weekly</li>
+					<li class="time-control" id="monthly">Monthly</li>
+				</ul>
+			</nav>
+			<div class="web-chart-container">
+				<canvas id="webTraffic" width='100' ></canvas>
+			</div>
+		</section>
+		<div class="section-container">
+		<section class="base-section" id="daily-traffic">
+			<h3 class="section-title">Daily Traffic</h3>
+			<div class="square-chart-container">
+				<canvas id="dailyTraffic" width='100' height='100'></canvas>
+			</div>
+		</section>
+		<section class="base-section" id="mobile-traffic">
+			<h3 class="section-title">Mobile Users</h3>
+			<div class="square-chart-container">
+				<canvas id="mobileTraffic" width='100' height='100'></canvas>
+			</div>
+		</section>
+				<section id="social" class="base-section">
+					<h3 class="section-title">Social Stats</h3>
+					<div class="social-widget">	
+						<div class="social-icons">
+							<?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+							<path fill="white" d="M32,3.1c-1.2,0.5-2.4,0.9-3.8,1c1.4-0.8,2.4-2.1,2.9-3.6c-1.3,0.8-2.7,1.3-4.2,1.6C25.8,0.8,24,0,22.2,0
+							c-3.6,0-6.6,2.9-6.6,6.6c0,0.5,0.1,1,0.2,1.5C10.3,7.8,5.5,5.2,2.2,1.2c-0.6,1-0.9,2.1-0.9,3.3c0,2.3,1.2,4.3,2.9,5.5
+							c-1.1,0-2.1-0.3-3-0.8c0,0,0,0.1,0,0.1c0,3.2,2.3,5.8,5.3,6.4c-0.6,0.1-1.1,0.2-1.7,0.2c-0.4,0-0.8,0-1.2-0.1
+							c0.8,2.6,3.3,4.5,6.1,4.6c-2.2,1.8-5.1,2.8-8.2,2.8c-0.5,0-1.1,0-1.6-0.1c2.9,1.9,6.4,3,10.1,3c12.1,0,18.7-10,18.7-18.7
+							c0-0.3,0-0.6,0-0.8C30,5.6,31.1,4.4,32,3.1z"/>
+							</svg>
+						</div>
+						<div class="social-text">
+							<h3>Twitter</h3>
+							<p>10,345</p>
+						</div>
+					</div>
+					<div class="social-widget">	
+						<div class="social-icons">
+							<?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 56.693 56.693" height="56.693px" id="Layer_1" version="1.1" viewBox="0 0 56.693 56.693" width="56.693px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="white" d="M40.43,21.739h-7.645v-5.014c0-1.883,1.248-2.322,2.127-2.322c0.877,0,5.395,0,5.395,0V6.125l-7.43-0.029  c-8.248,0-10.125,6.174-10.125,10.125v5.518h-4.77v8.53h4.77c0,10.947,0,24.137,0,24.137h10.033c0,0,0-13.32,0-24.137h6.77  L40.43,21.739z"/></svg>
+						</div>
+						<div class="social-text">
+							<h3>Facebook</h3>
+							<p>8,739</p>
+						</div>
+					</div>
+					<div class="social-widget">	
+						<div class="social-icons">
+							<?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							 viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+							<path fill="white" d="M17.7,25.7c0-0.3,0-0.5-0.1-0.8c-0.1-0.2-0.1-0.5-0.2-0.7c-0.1-0.2-0.2-0.4-0.3-0.7c-0.2-0.2-0.3-0.4-0.4-0.6
+							c-0.1-0.2-0.3-0.3-0.5-0.6c-0.2-0.2-0.4-0.4-0.5-0.5c-0.1-0.1-0.3-0.3-0.6-0.5c-0.3-0.2-0.5-0.4-0.6-0.4s-0.3-0.2-0.6-0.4
+							c-0.3-0.2-0.5-0.4-0.6-0.4c-0.2,0-0.5,0-1,0c-0.7,0-1.4,0-2,0.1c-0.7,0.1-1.4,0.2-2.1,0.5c-0.7,0.2-1.3,0.5-1.9,0.9s-1,0.8-1.3,1.4
+							c-0.3,0.6-0.5,1.3-0.5,2.1c0,0.9,0.2,1.7,0.7,2.3c0.5,0.7,1.1,1.2,1.8,1.6s1.5,0.7,2.3,0.9s1.6,0.3,2.4,0.3c0.8,0,1.5-0.1,2.2-0.2
+							c0.7-0.2,1.3-0.4,1.9-0.8c0.6-0.3,1.1-0.8,1.4-1.4C17.5,27.2,17.7,26.5,17.7,25.7z M15.4,9.1c0-0.8-0.1-1.6-0.3-2.5
+							c-0.2-0.9-0.5-1.7-0.9-2.5c-0.4-0.8-0.9-1.5-1.6-2c-0.7-0.5-1.5-0.8-2.3-0.8c-1.2,0-2.1,0.4-2.8,1.3c-0.7,0.9-1,1.9-1,3.2
+							c0,0.6,0.1,1.2,0.2,1.9c0.1,0.7,0.4,1.3,0.7,2c0.3,0.7,0.7,1.3,1.1,1.8c0.4,0.5,0.9,1,1.5,1.3c0.6,0.3,1.2,0.5,1.9,0.5
+							c1.2,0,2.1-0.4,2.7-1.2C15.1,11.4,15.4,10.4,15.4,9.1z M12.9,0h8.4l-2.6,1.5h-2.6c0.9,0.6,1.6,1.4,2.1,2.4s0.8,2.1,0.8,3.2
+							c0,0.9-0.1,1.8-0.4,2.5c-0.3,0.7-0.7,1.3-1.1,1.8c-0.4,0.4-0.8,0.9-1.3,1.2c-0.4,0.4-0.8,0.8-1.1,1.2c-0.3,0.4-0.4,0.8-0.4,1.3
+							c0,0.3,0.1,0.7,0.3,1c0.2,0.3,0.5,0.6,0.8,0.9c0.3,0.3,0.7,0.6,1.1,0.9c0.4,0.3,0.8,0.7,1.2,1.1c0.4,0.4,0.8,0.8,1.1,1.3
+							c0.3,0.5,0.6,1,0.8,1.6c0.2,0.6,0.3,1.3,0.3,2c0,2.1-0.9,3.9-2.7,5.4c-1.9,1.7-4.6,2.5-8.1,2.5c-0.8,0-1.5-0.1-2.3-0.2
+							c-0.8-0.1-1.6-0.3-2.3-0.6c-0.8-0.3-1.5-0.7-2.1-1.1c-0.6-0.4-1.1-1-1.5-1.7C1,27.6,0.8,26.9,0.8,26c0-0.8,0.2-1.6,0.7-2.6
+							c0.4-0.8,1-1.5,1.8-2.1c0.8-0.6,1.8-1.1,2.8-1.4c1-0.3,2-0.5,3-0.7c0.9-0.1,1.9-0.2,2.9-0.3c-0.8-1.1-1.2-2-1.2-2.9
+							c0-0.2,0-0.3,0-0.5c0-0.1,0.1-0.3,0.1-0.4c0-0.1,0.1-0.2,0.2-0.4c0.1-0.2,0.1-0.3,0.1-0.4c-0.5,0.1-1,0.1-1.3,0.1
+							c-1.9,0-3.5-0.6-4.9-1.9c-1.4-1.3-2-2.8-2-4.7c0-1.8,0.6-3.4,1.8-4.8C6,1.7,7.5,0.8,9.3,0.4C10.5,0.1,11.7,0,12.9,0z M32.8,4.9v2.5
+							h-4.9v4.9h-2.5V7.4h-4.9V4.9h4.9V0h2.5v4.9H32.8z"/>
+							</svg>
+						</div>
+						<div class="social-text">
+							<h3>Google+</h3>
+							<p>2,530</p>
+						</div>
+					</div>
+				</section>
+				<section class="base-section" id="new-member">
+					<h3>New Members</h3>
+							<div class="member-container">
+								<div class="img-container">
+									<img class="member-img" src="images/member-1.jpg" alt="Victoria Chambers">
+								</div>
+								<div class="members">
+									<h4>Victoria Chambers</h4>
+									<p><a class="member-email" href="#">victoria.chambers80@example.com</a></p>
+								</div>
+								<aside class="date-joined">10/15/15</aside>
+							</div>
+							<div class="member-container">
+								<div class="img-container">
+									<img class="member-img" src="images/member-2.jpg" alt="Dale Byrd">
+								</div>
+								<div class="members">
+									<h4>Dale Byrd</h4>
+									<p><a class="member-email" href="#">dale.byrd52@example.com</a></p>
+								</div>
+								<aside class="date-joined">10/15/15</aside>
+							</div>
+							<div class="member-container">
+								<div class="img-container">
+									<img class="member-img" src="images/member-3.jpg" alt="Dawn Wood">
+								</div>
+								<div class="members">
+									<h4>Dawn Wood</h4>
+									<p><a class="member-email" href="#">dawn.wood16@example.com</a></p>
+								</div>
+								<aside class="date-joined">10/15/15</aside>
+							</div>
+							<div class="member-container">
+								<div class="img-container">
+									<img class="member-img" src="images/member-4.jpg" alt="Dan Oliver">
+								</div>
+								<div class="members">
+									<h4>Dan Oliver</h4>
+									<p><a class="member-email" href="#">dan.oliver82@example.com</a></p>
+								</div>
+								<aside class="date-joined">10/15/15</aside>
+							</div>
+				</section>
+				<section class="base-section" id="recent-activity">
+					<h3 class="section-title">Recent Activity</h3>
+						<div class="member-container">
+							<div class="img-container">
+								<img class="post-img member-img" src="images/member-1.jpg" alt="Victoria Chambers">
+							</div>
+							<div class="member-posts">
+								<p class="recent-post">Victoria Chambers commented on YourApp's SEO Tips</p>
+								<p class="recent-time">4 Hours Ago</p>
+							</div>
+							<aside><i class="fas fa-chevron-right"></i></aside>
+						</div>
+						<div class="member-container">
+							<div class="post-img img-container">
+								<img class="member-img" src="images/member-2.jpg" alt="Dale Byrd">
+							</div>
+							<div class="member-posts">
+								<p class="recent-post">Dale Byrd like the post Facebook's Changes for 2016</p>
+								<p class="recent-time">5 Hours Ago</p>
+							</div>
+							<aside><i class="fas fa-chevron-right"></i></aside>
+						</div>
+						<div class="member-container">
+							<div class="img-container">
+								<img class="post-img member-img" src="images/member-3.jpg" alt="Dawn Wood">
+							</div>
+							<div class="member-posts">
+								<p class="recent-post">Dawn Wood commented on Facebook's Changes for 2016</p>
+								<p class="recent-time">5 Hours Ago</p>
+							</div>
+							<aside><i class="fas fa-chevron-right"></i></aside>
+						</div>
+						<div class="member-container">
+							<div class="img-container">
+								<img class="post-img member-img" src="images/member-4.jpg" alt="Dan Oliver">
+							</div>
+							<div class="member-posts">
+								<p class="recent-post">Dan Oliver posted YourApp's SEO Tips</p>
+								<p class="recent-time">1 day ago</p>
+						 	</div>
+							<aside><i class="fas fa-chevron-right"></i></aside>
+						</div>
+					
+				</section>
+				<section class="base-section" id="message-user">
+					<h3 class="section-title">Message User</h3>
+					<form id="messageUser" action="#" method="message">
+						<fieldset class="message-user">
+							<div class="form-container">
+								<div id="inputRequired">Name Required!</div>
+								<input type="text" id="user" placeholder="search for user">
+								<div id="autoComplete">
+									<ol id="autoCompleteResults">
+									</ol>
+								</div>
+								<div id="textfieldRequired">Message Required!</div>
+								 <textarea name="user_topics" id="topic" cols="30" rows="10" placeholder="message for user"></textarea>
+								 <button id="messageSubmit" type="submit">send</button>
+							</div>
+						</fieldset>
+					</form>
+				</section>
+				<section class="base-section" id="settings">
+					<h3 class="section-title">Settings</h3>
+						<form action="" id="userSettings">
+							<div class="settings-container">
+							<div class="on-off-switch">
+								<p class="on-off-choice">Send Email Notifications</p>
+								<div id="profileEmail" class="toggle-btn">
+									<div class="inner-circle"></div>
+									<p class="on">on</p>
+								</div>
+							</div>
+							<div class="on-off-switch">
+								<p class="on-off-choice">Set Profile to Public</p>
+								<div id="profilePublic" class="toggle-btn">
+									<div class="inner-circle"></div>
+									<p class="on">on</p>
+								</div>
+							</div>
+							<select name="timezone_offset" id="timezone-offset" class="span5" placeholder="Select Timezone">
+								<option value="-12:00">(GMT -12:00) Eniwetok, Kwajalein</option>
+								<option value="-11:00">(GMT -11:00) Midway Island, Samoa</option>
+								<option value="-10:00">(GMT -10:00) Hawaii</option>
+								<option value="-09:50">(GMT -9:30) Taiohae</option>
+								<option value="-09:00">(GMT -9:00) Alaska</option>
+								<option value="-08:00">(GMT -8:00) Pacific Time (US &amp; Canada)</option>
+								<option value="-07:00">(GMT -7:00) Mountain Time (US &amp; Canada)</option>
+								<option value="-06:00">(GMT -6:00) Central Time (US &amp; Canada), Mexico City</option>
+								<option value="-05:00">(GMT -5:00) Eastern Time (US &amp; Canada), Bogota, Lima</option>
+								<option value="-04:50">(GMT -4:30) Caracas</option>
+								<option value="-04:00">(GMT -4:00) Atlantic Time (Canada), Caracas, La Paz</option>
+								<option value="-03:50">(GMT -3:30) Newfoundland</option>
+								<option value="-03:00">(GMT -3:00) Brazil, Buenos Aires, Georgetown</option>
+								<option value="-02:00">(GMT -2:00) Mid-Atlantic</option>
+								<option value="-01:00">(GMT -1:00) Azores, Cape Verde Islands</option>
+								<option value="+00:00" selected="selected">Select Timezone</option>
+								<option value="+01:00">(GMT +1:00) Brussels, Copenhagen, Madrid, Paris</option>
+								<option value="+02:00">(GMT +2:00) Kaliningrad, South Africa</option>
+								<option value="+03:00">(GMT +3:00) Baghdad, Riyadh, Moscow, St. Petersburg</option>
+								<option value="+03:50">(GMT +3:30) Tehran</option>
+								<option value="+04:00">(GMT +4:00) Abu Dhabi, Muscat, Baku, Tbilisi</option>
+								<option value="+04:50">(GMT +4:30) Kabul</option>
+								<option value="+05:00">(GMT +5:00) Ekaterinburg, Islamabad, Karachi, Tashkent</option>
+								<option value="+05:50">(GMT +5:30) Bombay, Calcutta, Madras, New Delhi</option>
+								<option value="+05:75">(GMT +5:45) Kathmandu, Pokhara</option>
+								<option value="+06:00">(GMT +6:00) Almaty, Dhaka, Colombo</option>
+								<option value="+06:50">(GMT +6:30) Yangon, Mandalay</option>
+								<option value="+07:00">(GMT +7:00) Bangkok, Hanoi, Jakarta</option>
+								<option value="+08:00">(GMT +8:00) Beijing, Perth, Singapore, Hong Kong</option>
+								<option value="+08:75">(GMT +8:45) Eucla</option>
+								<option value="+09:00">(GMT +9:00) Tokyo, Seoul, Osaka, Sapporo, Yakutsk</option>
+								<option value="+09:50">(GMT +9:30) Adelaide, Darwin</option>
+								<option value="+10:00">(GMT +10:00) Eastern Australia, Guam, Vladivostok</option>
+								<option value="+10:50">(GMT +10:30) Lord Howe Island</option>
+								<option value="+11:00">(GMT +11:00) Magadan, Solomon Islands, New Caledonia</option>
+								<option value="+11:50">(GMT +11:30) Norfolk Island</option>
+								<option value="+12:00">(GMT +12:00) Auckland, Wellington, Fiji, Kamchatka</option>
+								<option value="+12:75">(GMT +12:45) Chatham Islands</option>
+								<option value="+13:00">(GMT +13:00) Apia, Nukualofa</option>
+								<option value="+14:00">(GMT +14:00) Line Islands, Tokelau</option>
+							</select>
+							<div class="save-cancel-container">
+								<button id="save">save</button>
+								<button id="cancel">cancel</button>
+							</div>
+						</div>
+					</form>
+				</section>
+		</div>
+		<!--section container section 3---------->
+	</div>
+	<script type="text/tavascript" src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+	<script type="text/javascript" src="js/alert.js"></script>
+	<script type="text/javascript" src="js/localstorage.js"></script>
+	<script type="text/javascript" src="js/dropdown.js"></script>
+	<script type="text/javascript" src="js/autoComplete.js"></script>
+	<script type="text/javascript" src="js/charts.js"></script>
+	<script type="text/javascript" src="js/required.js"></script>
+</body>
+</html>
