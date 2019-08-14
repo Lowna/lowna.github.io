@@ -1,4 +1,21 @@
+html {
+	scroll-behavior: smooth;
+}
 body {
 	line-height: 1.7;
 	font-size: 16px;
+	font-family: $font-fam;
+	background: $background;
+	background: url('../img/top-img-mobile.jpg') no-repeat;
+}
+@media (min-width: 768px) {
+	body {
+		background: url('../img/background-overlay-768px.jpg') no-repeat;
+
+	}
+}
+@media (min-width: 1280px) {
+	body {
+		background-size: cover;
+	}
 }

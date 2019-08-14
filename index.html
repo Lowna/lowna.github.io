@@ -5,8 +5,161 @@
   	<meta name="author" content="Lowry Nakamura">
   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Lowry Nakamura Portfolio</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<!--begin Site-->
+		<!--begin Header-->
+		<header id="header" class="header">
+			<span id="logo"><img src="img/logo_sm_edit.png" alt="logo"></span>
+			<span id="showHide"><i class="fas fa-bars"></i></span>
+		</header>
+		<nav id="nav">
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#about">Bio</a></li>
+				<li><a href="#skills">Skills</a></li>
+				<li><a href="#contact">Contact</a></li>
+		</nav>
+		<!--begin Banner-->
+		<section id="banner">
+			<div id="highlightBrdr">
+				<h1>Web Development</h1>
+				<h1>Photography</h1>
+			</div>
+		</section>
+		<div class="container">
+		<!--begin Portfolio-->
+		<section id="portfolio">
+			<h2 class="section-title">Portfolio</h2>
+			<div id="imgContainer">
+				<!--Lowry Nakamura Photography-->
+				<a class="port-link" href="#"><img class="port-img" src="img/port-img/photoSite.jpg" alt="Lowry Nakamura Photography"><img class="overlay" src="img/port-img/photo-work.png" alt="overlay for Lowry Nakamura Photography website"></a>
+				<!--Employee Api Project-->
+				<a class="port-link" href="project/emp-api/index.html" target="_blank"><img class="port-img" src="img/port-img/employeeSearch.jpg" alt="Employee search."><img class="overlay" src="img/port-img/api.png" alt="overlay for employee search api hover"></a>
+				<!--Sample Photo Gallery-->
+				<a class="port-link" href="project/samp-gallery/index.html" target="_blank"><img class="port-img" src="img/port-img/photoGallery.jpg" alt="Photo Gallery"><img class="overlay" src="img/port-img/img-gallery.png" alt="overlay for sample photo gallery hover"></a>
+				<!--Registration Form-->
+				<a class="port-link" href="project/registration/tech-degree-project-3/index.html" target="_blank"><img class="port-img" src="img/port-img/registrationForm.jpg" alt="Registration Form"><img class="overlay" src="img/port-img/registration.png" alt="overlay for registration form hover"></a>
+				<!--webApp-->
+				<a class="port-link" href="project/webApp/main.html" target="_blank"><img class="port-img" src="img/port-img/webApp.jpg" alt="Web app game."><img class="overlay" src="img/port-img/webApp.png" alt="overlay for webApp hover"></a>
+				<!--Wheel of Success-->
+				<a class="port-link" href="project/wheel/index.html" target="_blank"><img class="port-img" src="img/port-img/wheelOfSuccess.jpg" alt="Wheel of success app."><img class="overlay" src="img/port-img/wheel.png" alt="overlay for wheel of success hover"></a>
+			</div>
+		</section>
+		<!--begin About-->
+		<section id="about">
+			<h2 class="section-title">About</h2>
+				<section id="bio">
+			         <p>Lowry Nakamura is a Web Developer and Photographer living and working in Sacramento California.
+			         On his free time&#44; you can find him reading&#44; creating art&#44; brewing beers&#44; wines and ciders as well as cooking with his wife Jessica&#46;</p>
+				</section>
+				<section id="cv">
+			        <h3>Education</h3>
+			        <ol class="resume">
+			            <li>Bachelors of Fine Art In Studio Art&#44; University of New Mexico 
+			            Albuquerque NM&#44; 12
+			            </li>
+			            <li>Associates of Fine Art Photography Santa Fe Community College
+			            Santa Fe NM&#44; 10
+			            </li>
+			            <li>Associates of Fine Arts Santa Fe Community College
+			            Santa Fe NM&#44; 08
+			            </li>
+			            <li>Certificate  Web Design Level I University of New Mexico
+			           Albuquerque NM&#44; 15
+			            </li>
+			        </ol>
+			        <h3>Professional Experience</h3>
+			        <ol class="resume">
+			            <li>Onespeed Pizza ~ 2018-present</li>
+			            <li>Mike's Camera ~ 2016-2018</li>
+			            <li>Santa Fe Clay ~ 2015-2015</li>
+			            <li>LewAllen Galleries ~ 2013-2014</li>
+			            <li>University of New Mexico Art Museum ~ 2011-2012</li>
+			            <li>SFCC School of Arts and Design Gallery Intern ~ 2008-2010</li>
+			            <li>Internship Photography ~ James Hart, Santa Fe New Mexico 2009</li>
+			        </ol>
+			    </section>
+			<button id="toggleResume">cv</button>
+		</section>
+		<!--begin Skills-->
+		<section id="skills">
+			
+			<div id="skillType">
+				<ol>
+					<li>html</li>
+					<li>css</li>
+					<li>js</li>
+					<li>illustratio</li>
+					<li>photoshop</li>
+				</ol>
+			</div>
+			<div id="skillAnimation">
+				<div class="skillContainer">
+					<div class="rect" data-value="10"></div>
+					<div class="circle">10</div>
+				</div>
+				<div class="skillContainer">
+					<div class="rect" data-value="10"></div>
+					<div class="circle">10</div>
+				</div>	
+				<div class="skillContainer">
+					<div class="rect" data-value="8"></div>
+					<div class="circle">8</div>
+				</div>	
+				<div class="skillContainer">
+					<div class="rect" data-value="8"></div>
+					<div class="circle">8</div>
+				</div>	
+				<div class="skillContainer">
+					<div class="rect" data-value="10"></div>
+					<div class="circle">10</div>
+				</div>		
+			</div>
+			<h2 id="topBottom">Skills</h2>
+		</section>
+		<!--begin Contact-->
+		<section id="contact">
+			<h2 class="section-title">Contact</h2>
+			<div id="headlineContainer">
+				<h3>Let's Chat</h3>
+				<p>Send me your name, contact info and a brief message and I’ll get back to at my earliest convienence.</p>
+				<img id="profile" src="img/profile-pic.jpg" alt="Lowry Nakamura">
+			</div>
+			<!--begin Form-->
+			<form id="contact" action="#" method="message">
+				<fieldset class="message-me">
+					<div class="form-container">
+						<div id="nameRequired" class="required">Name Required!</div>
+						<input type="text" id="name" placeholder="Name...">
+						<div id="emailRequired" class="required">Email Required!</div>
+						<input type="email" id="email" placeholder="Email...">
+						<div class="required" id="textfieldRequired">Message Required!</div>
+						 <textarea name="message" id="message" cols="30" rows="10" placeholder="Type message here..."></textarea>
+						 <button id="messageSubmit" type="submit">send</button>
+					</div>
+				</fieldset>
+			</form>
+			<!--end Form-->
+		</section>
+
+		<!--begin Footer-->
+		<footer id="footer">
+			
+			<div id="copyName">
+				<p>&copy; Lowry Nakamura 2019</p>
+			</div>
+			<div id="social">
+				<p>
+					<a href="https://www.linkedin.com/in/lowry-nakamura-868059122/" target="_blank"><i class="fab fa-linkedin"></i></a> 
+					<a href="https://www.instagram.com/lowrynaka/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a> 
+					<a href="https://www.facebook.com/lowry.nakamura" target="_blank"><i class="fab fa-facebook-square"></i></a>  
+					<a href="https://github.com/Lowna" target="_blank"><i class="fab fa-github-square"></i></a><a href="https://twitter.com/lowrynak" target="_blank"><i class="fab fa-twitter-square"></i></a></p>
+			</div>
+		</footer>
+	</div>
+<!--begin Page Content-->
 <script src="js/app.js"></script>	
 </body>
 </html>
