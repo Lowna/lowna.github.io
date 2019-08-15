@@ -297,16 +297,18 @@ select {
   justify-content: space-between;
   background: #292929;
   color: #fff;
-  padding-left: 2em;
-  padding-right: 2em;
+  padding: 1em 2em 0 2em;
   border-top: 1px solid #fff;
 }
-#footer i {
-  margin-left: 5px;
-  color: #4b4b4b;
-  font-size: 1.5em;
+#footer p {
+  display: inline;
 }
-#footer i:hover {
+#footer svg {
+  margin-left: 5px;
+  color: #6d6d6d;
+  width: 25px;
+}
+#footer svg:hover {
   color: #000;
   transition: 1s ease-in-out;
 }

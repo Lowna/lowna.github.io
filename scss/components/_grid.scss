@@ -94,15 +94,17 @@
 	justify-content: space-between;
 	background: $contact-footer;
 	color: $white;
-	padding-left: 2em;
-	padding-right: 2em;
+	padding: 1em 2em 0 2em;
 	border-top: 1px solid $white;
-	i {
+	p {
+	display: inline;
+	}
+	svg {
 		margin-left: 5px;
 		color: $social;
-		font-size: 1.5em;
+		width: 25px;
 	}
-	i:hover {
+	svg:hover {
 		color: $btn-black;
 		transition: 1s ease-in-out;
 	}
