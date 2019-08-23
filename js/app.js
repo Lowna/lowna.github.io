@@ -78,7 +78,7 @@ window.onload = function(){
 	var submit = document.getElementById('messageSubmit');
 
 	submit.addEventListener('click', function(e) {
-		
+		e.preventDefault();
 		var formValid = true;
 		var nameAlert = document.getElementById('nameRequired');
 		var emailAlert = document.getElementById('emailRequired');
@@ -108,7 +108,6 @@ window.onload = function(){
 			requiredtext.value = '';
 		} else {
 			alert('Invalid submission!');
-			e.preventDefault();
 		}
 	})
 
