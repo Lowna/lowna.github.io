@@ -78,7 +78,7 @@ window.onload = function(){
 	var submit = document.getElementById('messageSubmit');
 
 	submit.addEventListener('click', function(e) {
-		
+		e.preventDefault();
 		var formValid = true;
 		var nameAlert = document.getElementById('nameRequired');
 		var emailAlert = document.getElementById('emailRequired');
@@ -103,12 +103,12 @@ window.onload = function(){
 			messageAlert.style.display = 'none';
 		}
 		if(formValid) {
-			// requiredName.value = '';
-			// requiredEmail.value = '';
-			// requiredtext.value = '';
+			requiredName.value = '';
+			requiredEmail.value = '';
+			requiredtext.value = '';
 		} else {
 			alert('Invalid submission!');
-			e.preventDefault();
+			
 		}
 	})
 
