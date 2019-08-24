@@ -429,6 +429,9 @@ select {
 #cv {
   display: none;
 }
+#cv ol {
+  list-style: none;
+}
 #cv h3, #cv li {
   color: #fff;
 }

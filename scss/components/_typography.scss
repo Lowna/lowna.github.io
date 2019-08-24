@@ -49,6 +49,9 @@
 }
 #cv {
 	display: none;
+	ol {
+		list-style: none;
+	}
 	h3, li {
 		color: $white;
 	}
