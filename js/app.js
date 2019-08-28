@@ -3,7 +3,7 @@ window.onload = function(){
 	var toggleNav = document.getElementById('showHide');
 
 	toggleNav.addEventListener('click', function(e) {
-		//e.preventDefault();
+		e.preventDefault();
 		var nav = document.getElementById('nav');
 		if (nav.style.display === 'none' || nav.style.display === '') {
 			nav.style.display = 'flex';
