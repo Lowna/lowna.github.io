@@ -109,7 +109,7 @@ window.onload = function(){
 			return false;
 		} else {
 			alert('Invalid submission!');
-			
+			e.preventDefault();
 		}
 	})
 
