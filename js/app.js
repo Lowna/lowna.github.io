@@ -128,6 +128,7 @@ window.onload = function(){
 		    	requiredName.value = '';
 				requiredEmail.value = '';
 				requiredText.value = '';
+				alert('Thanks for contacting me, I\'ll be in touch!');
 		    }); // parses JSON response into native JavaScript objects 
 
 		} else {
