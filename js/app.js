@@ -103,9 +103,9 @@ window.onload = function(){
 			messageAlert.style.display = 'none';
 		}
 		if(formValid) {
-			requiredName.value = '';
-			requiredEmail.value = '';
-			requiredtext.value = '';
+			// requiredName.value = '';
+			// requiredEmail.value = '';
+			// requiredText.value = '';
 		} else {
 			alert('Invalid submission!');
 			
