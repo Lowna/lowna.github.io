@@ -106,6 +106,7 @@ window.onload = function(){
 			// requiredName.value = '';
 			// requiredEmail.value = '';
 			// requiredText.value = '';
+			return false;
 		} else {
 			alert('Invalid submission!');
 			
