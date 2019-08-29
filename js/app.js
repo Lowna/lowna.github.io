@@ -78,7 +78,7 @@ window.onload = function(){
 	var submit = document.getElementById('messageSubmit');
 
 	submit.addEventListener('click', function(e) {
-		// e.preventDefault();
+		e.preventDefault();
 		var formValid = true;
 		var nameAlert = document.getElementById('nameRequired');
 		var emailAlert = document.getElementById('emailRequired');
@@ -103,13 +103,36 @@ window.onload = function(){
 			messageAlert.style.display = 'none';
 		}
 		if(formValid) {
-			// requiredName.value = '';
-			// requiredEmail.value = '';
-			// requiredText.value = '';
-			return false;
+			
+			let data = {
+				name: requiredName.value,
+				emailAddress: requiredEmail.value,
+				message: requiredText.value
+			};
+	
+		    fetch('https://lowna.prod.with-datafire.io/contact', {
+		        method: 'POST', // *GET, POST, PUT, DELETE, etc.
+		        mode: 'cors', // no-cors, cors, *same-origin
+		        cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+		        credentials: 'same-origin', // include, *same-origin, omit
+		        headers: {
+		            'Content-Type': 'application/json',
+		            // 'Content-Type': 'application/x-www-form-urlencoded',
+		        },
+		        redirect: 'follow', // manual, *follow, error
+		        referrer: 'no-referrer', // no-referrer, *client
+		        body: JSON.stringify(data), // body data type must match "Content-Type" header
+		    })
+		    .then(response => response.json())
+		    .then(data => {
+		    	requiredName.value = '';
+				requiredEmail.value = '';
+				requiredText.value = '';
+		    }); // parses JSON response into native JavaScript objects 
+
 		} else {
 			alert('Invalid submission!');
-			e.preventDefault();
+			
 		}
 	})
 
