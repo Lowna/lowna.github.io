@@ -321,6 +321,10 @@ select {
     padding: 2em;
   }
 
+  .overlay {
+    margin-left: 2em;
+  }
+
   #contact {
     padding: 0;
     padding-top: 2em;
@@ -504,6 +508,11 @@ select {
   box-shadow: 0px 2px 23px -10px rgba(0, 0, 0, 0.25);
 }
 
+@media screen and (max-width: 400px) and (min-width: 200px) {
+  .overlay {
+    margin-left: 2em;
+  }
+}
 @media (min-width: 768px) {
   #imgContainer {
     grid-template-columns: repeat(2, 1fr);
