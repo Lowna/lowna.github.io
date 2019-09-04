@@ -113,6 +113,26 @@
 		transition: 1s ease-in-out;
 	}
 } 
+//for small screen sizes
+@media screen and (max-width: 400px) and (min-width: 200px) {
+	#portfolio {
+		padding: 2em;
+	}
+	#contact {
+		padding: 0;
+		padding-top: 2em;
+		padding-bottom: 2em;
+		h2 {
+			margin-right: 2em;
+		}
+		#headlineContainer {
+			margin: .5em;
+		}
+		form {
+			margin: .5em;
+		}
+	}
+}
 @media (min-width: 768px) {
 	#contact {
 		display: flex;
