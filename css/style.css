@@ -321,14 +321,11 @@ select {
     padding: 2em;
   }
 
-  .overlay {
-    margin-left: 2em;
-  }
-
   #contact {
     padding: 0;
     padding-top: 2em;
     padding-bottom: 2em;
+    padding-right: 0.25em;
   }
   #contact h2 {
     margin-right: 2em;
