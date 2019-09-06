@@ -65,11 +65,12 @@ window.onload = function(){
 				rect.style.width = '10px';
 			});
 		} 
-	};
+	}
 	window.onscroll = function(){
 		skillAnimation();
 	};
 	skillAnimation();
+
 	//form validation
 	var requiredName = document.getElementById('name');
 	var requiredEmail = document.getElementById('email');
