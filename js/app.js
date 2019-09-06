@@ -4,7 +4,7 @@ window.onload = function(){
 
 	toggleNav.addEventListener('click', function(e) {
 		e.preventDefault();
-		var nav = document.getElementById('nav');
+		var nav = document.getElementById('toggleNav');
 		if (nav.style.display === 'none' || nav.style.display === '') {
 			nav.style.display = 'flex';
 		} else {
