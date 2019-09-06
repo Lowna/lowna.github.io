@@ -65,7 +65,7 @@ window.onload = function(){
 				rect.style.width = '10px';
 			});
 		} 
-	}
+	};
 	window.onscroll = function(){
 		skillAnimation();
 	};
