@@ -1,8 +1,8 @@
 #nav {
-			ul {
+			
 				display: none;
-				justify-content: center;
 				flex-direction: column;
+				justify-content: center;
 				list-style: none;
 				text-align: center;
 				margin-left: 25px;
@@ -25,16 +25,18 @@
 						background: $black;
 						transition: 0.5s ease-in;
 				}
-			}
+			
 }
 @media (min-width: 768px) {
 	#nav {
-	ul {
-		display: flex;
-		flex-direction: row;
+		ul {
+			flex-direction: row;
+			justify-content: center;
+
 			li {
 				margin-left: 1em;
 			}
 		}
 	}
+		
 }
