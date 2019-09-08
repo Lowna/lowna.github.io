@@ -55,12 +55,12 @@ window.onload = function(){
 	//skills 
 	function skillAnimation() {
 		var skills = document.getElementById('skills');
-		if (window.innerHeight + document.body.scrollTop >= skills.offsetTop) {
+		if (window.innerHeight + window.scrollY >= skills.offsetTop) {
 			document.querySelectorAll('.rect').forEach(function(rect) {
 				var skillLevel = rect.dataset.value;
 				rect.style.width = 'calc(' + skillLevel + '0% - 25px)';
 			});
-		} else if(window.innerHeight + document.body.scrollTop <= skills.offsetTop) {
+		} else if(window.innerHeight + window.scrollY <= skills.offsetTop) {
 			document.querySelectorAll('.rect').forEach(function(rect) {
 				rect.style.width = '10px';
 			});
