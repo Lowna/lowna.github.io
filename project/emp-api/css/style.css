@@ -295,7 +295,6 @@ select {
 .avatar {
   border-radius: 50%;
   width: 25%;
-  height: 25%;
   margin-left: 10px;
   align-self: center;
 }
