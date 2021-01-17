@@ -58,7 +58,7 @@ window.onload = function() {
 		if (window.innerHeight + window.scrollY >= skills.offsetTop) {
 			document.querySelectorAll('.rect').forEach(function(rect) {
 				var skillLevel = rect.dataset.value;
-				rect.style.width = 'calc(' + skillLevel + '0% - 125px)';
+				rect.style.width = 'calc(' + skillLevel + '0% - 50px)';
 			});
 		} else if (window.innerHeight + window.scrollY <= skills.offsetTop) {
 			document.querySelectorAll('.rect').forEach(function(rect) {
