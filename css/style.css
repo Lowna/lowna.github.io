@@ -435,6 +435,14 @@ select {
   font-weight: 300;
   letter-spacing: 1.15px;
 }
+#banner h2 {
+  text-align: right;
+  padding-right: 1.5em;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 1.15px;
+}
 
 #headlineContainer h3 {
   display: inline-block;
